@@ -1,26 +1,25 @@
-/*WAP to find wether a number is even or odd using bitwise.*/
+/* WAP to count number of set bits in a number.*/
 
 #include <stdio.h>
 #include <stdlib.h>
 
-int CheckNum(n)
-   {
-     if(n&1==1)
-       return 1;
-     else if(n&1!=1)
-       return 0;
-   }
-
+int CountSetBits(int n)
+{
+    int count=0;
+    while(n)
+       {
+         count+=n&1;
+         n>>=1;
+       }
+    return count;
+    }
 
 int main()
 {
-    int n;
-
-    printf("Enter any number:\n");
+    int n, count;
+    printf("enter any number: ");
     scanf("%d", &n);
-    if(CheckNum==1)
-        printf("%d is an odd number", n);
-    else if(CheckNum!=1)
-        printf("%d is an even number", n);
+    count=CountSetBits(n);
+    printf("%d have %d number of set bits", n, count);
     return 0;
 }
