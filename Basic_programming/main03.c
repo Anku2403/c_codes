@@ -8,7 +8,7 @@ int CountSetBits(int n)
     int count=0;
     while(n)
        {
-         count+=n&1;
+         count+=n&1; // counting the set bit (if n&1 =1).
          n>>=1;
        }
     return count;
