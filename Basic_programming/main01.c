@@ -5,7 +5,7 @@
 
 int CheckNum(n)
    {
-     if(n&1==1)
+     if(n&1==1) // check if first bit is 1 (even) or 0 (odd).
        return 1;
      else
        return 0;
