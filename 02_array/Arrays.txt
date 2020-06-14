@@ -1,0 +1,17 @@
+Arrays:
+
+1. Calculate the sum of all elements in an array.
+2. Find largest number in the array.
+3. Find second larget number in the array.
+4. Calculate the frequency of each element in the array.
+5. Count the number of pairs in the array whose sum are equal to 30.
+6. Merge two arrays. Given arrays A and B merge it to new array C and print C.
+7. Find if the array A is subset of array B.
+eg: A = {1, 2, 3}, B = {1, 2, 4, 5, 3} -> yes A is Subset of B
+	A = {1, 2, 3}, B = {4, 5, 5, 1, 2, 3} ->  A is subset of B
+	A = {1, 2, 3, 4}, B = {1, 2} -> A is not subset of B
+8. Find all prime numbers from given array.
+9. Reverse the element of array.
+10. Create subset from the array. (extract unique element from the array)
+eg: A = {1, 2, 3, 5, 8, 3, 2} -> {1, 2, 3, 5, 8}
+11. Check if array contains unique elements.
