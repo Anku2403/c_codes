@@ -1,0 +1,73 @@
+1. write a program to find wether a number is even or odd using bitwise.
+2. WAP to convert a number from decimal to binary.
+3. WAP to count number of set bits in a number.
+eg: 18 -> 10010
+	set bits = 2
+
+4. WAP to left rotate and right rotate bits by n times.
+eg: 18 -> 00010010 (considering 8 bit space)
+	left rotating 1 time: 00010010 -> 00100100
+
+5. WAP to set n number of bits from given position.
+eg: 18 -> 00010010    if i have to set 3 bit from position 4 (from left)
+	58 -> 00111010
+	
+Predict the output of following codes in c and python:
+
+#include <stdio.h>
+int main()
+{
+	int c = 2 ^ 3;
+	printf("%d\n", c);
+}
+
+#include <stdio.h>
+int main()
+{
+	unsigned int a = 10;
+	a = ~a;
+	printf("%d\n", a);
+}
+
+#include <stdio.h>
+int main()
+{
+	if (7 & 8)
+		printf("Honesty");
+	if ((~7 & 0x000f) == 8)
+		printf("is the best policy\n");
+}
+
+#include <stdio.h>
+int main()
+{
+	int a = 2;
+	if (a >> 1)
+		printf("%d\n", a);
+}
+
+#include <stdio.h>
+int main()
+{
+	int i, n, a = 4;
+	scanf("%d", &n);
+	for (i = 0; i < n; i++)
+		a = a * 2;
+}
+
+#include <stdio.h>
+void main()
+{
+	int x = 97;
+	int y = sizeof(x++);
+	printf("x is %d", x);
+}
+
+#include <stdio.h>
+void main()
+{
+	int x = 4, y, z;
+	y = --x;
+	z = x--;
+	printf("%d%d%d", x, y, z);
+}
