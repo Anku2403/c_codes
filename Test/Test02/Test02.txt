@@ -1,0 +1,75 @@
+1. WAP to find the range of signed and unsined char only in c.
+2. Given an array containing integer from 200 to 300 and one integer is missing. WAP to find missing integer
+3. Given an array of 0's and 1's. WAP to find largest cluster of 1's.
+eg: arr = {1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0}   -> largest cluster = 5
+4. WAP to determine if an array is symmetrical.
+5. WAP to copy array A to B.
+
+
+Write the output:
+a) int main()
+{
+    char arr[10] = {0};
+    int n = 300, i;
+    arr[4] = n;
+    for (i = 0; i < 10; i++)
+        printf("%d\n", arr[i]);
+    return 0;
+}
+b) int main()
+{
+    int arr[] = {'a', 'b', 'c'};
+    printf ("%c    %d", arr[1], arr[1]);
+    return 0;
+}
+c) int main()
+{
+    int arr[] = {'a', 'b', 'c'};
+    int arr2[] = {1, 2, 3};
+    arr = arr2;
+    return 0;
+}
+d)
+int main()
+{
+    int arr[] = {'a', 'b', 'c'};
+    printf("%s", arr);
+    return 0;
+}
+e) int main()
+{
+    int arr[] = {0xffffffff, 'b', 'c'};
+    printf("%s", arr);
+    return 0;
+}
+f) int main()
+{
+    int arr[] = {2+'c', 4, 0};
+    printf ("%d", arr[0]);
+    return 0;
+}
+
+int main()
+{
+    char c;
+
+    for(c = 0; c <= 127; c++ )
+        printf("%d\n", c);
+    return 0;
+}
+
+int main()
+{
+    char c = 066;
+    printf("%d\n", c);
+    return 0;
+}
+
+
+int main()
+{
+    int i = 0x41;
+    printf("%c\n", i);
+    return 0;
+}
+
