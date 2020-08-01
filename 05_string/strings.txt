@@ -1,0 +1,35 @@
+strings:
+========
+* use fgets to take  input
+* create a function to take input of string and convert to integer
+
+ascii_to_int
+int my_atoi(char *str)
+{
+	int num;
+	//your code
+	//	use fgets to take input
+	return num;
+}
+
+Example:
+printf("%d\n", atoi("Enter the number: "));
+
+========================================================================
+use fgets for string input
+create a folder called "5_strings/lib"
+inside lib create follwoing fucntion in different c files with function name (no need of number)
+1. calculate string length (int my_strlen(char *str))
+2. concatanate two strings (char* my_concat(char *str1, char *str2)
+3. copy string (void my_strcp(char *str1, char *str2)
+4. replace a character with other character of a given string (char * replace(char * str, char old, char new))
+5. left rotate the string by given number (char * leftrotate(char *str, int num))
+7.  right rotate the sring
+8. find the substring from a given string, print its position and address (void findsubstr(char * str, char  *  substr))
+9. take multiple string input and store all in single variable(2-d aaray) and print the strings (void printallstrings()) 
+10. sueeze the repeating characters from a string (char * squeeze(char * str, char c)
+
+create a folder "5_strings/inc"
+create a header file(my_str_hdr.h) for above fucntion declaration.
+
+create a main.c file in 05_strings folder
